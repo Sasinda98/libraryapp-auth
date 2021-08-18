@@ -31,14 +31,14 @@
 -- (1,3), /* borrow_book -> ROLE_student */
 -- (2,3); /* return_book -> ROLE_student */
 --
--- insert into muser (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
--- VALUES ('1', 'gayal_the_librarian','{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG', 'gayal@domain.com', '1', '1', '1', '1');
+-- insert into muser (id, firstname, lastname, createdat, modifiedat, username, password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
+-- VALUES ('1', 'Gayal', 'Rupasinghe', current_timestamp, current_timestamp, 'gayal_the_librarian','{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG', 'gayal@domain.com', '1', '1', '1', '1');
 --
--- insert into  muser (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
--- VALUES ('2', 'lewis_the_teacher', '{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG','lewis@domain.com', '1', '1', '1', '1');
+-- insert into  muser (id, firstname, lastname, createdat, modifiedat, username, password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
+-- VALUES ('2', 'Lewis', 'Hamilton', current_timestamp, current_timestamp, 'lewis_the_teacher', '{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG','lewis@domain.com', '1', '1', '1', '1');
 --
--- insert into  muser (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
--- VALUES ('3', 'john_the_student', '{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG','john@domain.com', '1', '1', '1', '1');
+-- insert into  muser (id, firstname, lastname, createdat, modifiedat, username, password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
+-- VALUES ('3', 'John', 'Doe', current_timestamp, current_timestamp, 'john_the_student', '{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjOQSdEw44QdqG','john@domain.com', '1', '1', '1', '1');
 --
 -- INSERT INTO ROLE_USER (ROLE_ID, USER_ID)
 -- VALUES
