@@ -18,17 +18,20 @@ import javax.sql.DataSource;
 @Configuration
 public class AuthorizationServerConfiguration implements AuthorizationServerConfigurer {
 
-    @Autowired
-    UserDetailsService userDetailsService;
+    private final UserDetailsService userDetailsService;
 
-    @Autowired
-    private AuthenticationManager authenticationManager;
+    private final AuthenticationManager authenticationManager;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder;
 
-    @Autowired
-    DataSource dataSource;
+    private final DataSource dataSource;
+
+    public AuthorizationServerConfiguration(UserDetailsService userDetailsService, AuthenticationManager authenticationManager, PasswordEncoder passwordEncoder, DataSource dataSource) {
+        this.userDetailsService = userDetailsService;
+        this.authenticationManager = authenticationManager;
+        this.passwordEncoder = passwordEncoder;
+        this.dataSource = dataSource;
+    }
 
     @Bean
     TokenStore jdbcTokenStore() {
