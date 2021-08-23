@@ -1,5 +1,5 @@
 -- INSERT INTO oauth_client_details (client_id, client_secret, web_server_redirect_uri, scope, access_token_validity, refresh_token_validity, resource_ids, authorized_grant_types, additional_information)
--- VALUES ('mobile', '{bcrypt}$2a$10$gPhlXZfms0EpNHX0.HHptOhoFD1AoxSr/yUIdTqA8vtjeP4zi0DDu', 'http://localhost:8080/code', 'READ,WRITE', '3600', '10000', 'book,user', 'authorization_code,password,refresh_token,implicit,client_credentials', '{}');
+-- VALUES ('3rd_party_client_id', '{bcrypt}$2a$10$57vi2qlA.OfN2VZkMsuUNO43aDtJgxJoGtnmspyYRRf0M9K9RuhVS', 'http://localhost:8080/code', 'READ,WRITE', '3600', '10000', 'book,user', 'authorization_code,password,refresh_token,implicit,client_credentials', '{}');
 --
 -- INSERT INTO PERMISSION (id, NAME) VALUES
 -- (1, 'borrow_book'),
